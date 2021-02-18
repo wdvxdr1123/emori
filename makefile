@@ -1,5 +1,8 @@
 test:
 	go test ./...
 
-emori:
+build:
 	go build ./cmd/emori
+
+run:
+	go run ./cmd/emori

@@ -6,6 +6,7 @@ import (
 	zero "github.com/wdvxdr1123/ZeroBot"
 	_ "github.com/wdvxdr1123/emori/pkg/anime"
 	_ "github.com/wdvxdr1123/emori/pkg/rcnb"
+	_ "github.com/wdvxdr1123/emori/pkg/thisdoesnotexist"
 )
 
 func init() {
