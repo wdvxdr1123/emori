@@ -4,6 +4,7 @@ import (
 	log "github.com/sirupsen/logrus"
 	easy "github.com/t-tomalak/logrus-easy-formatter"
 	zero "github.com/wdvxdr1123/ZeroBot"
+	"github.com/wdvxdr1123/ZeroBot/driver"
 	_ "github.com/wdvxdr1123/emori/pkg/anime"
 	_ "github.com/wdvxdr1123/emori/pkg/rcnb"
 	_ "github.com/wdvxdr1123/emori/pkg/thisdoesnotexist"
@@ -19,12 +20,12 @@ func init() {
 
 func main() {
 	zero.Run(zero.Config{
-		Host:          "127.0.0.1",
-		Port:          "6700",
-		AccessToken:   "",
 		NickName:      []string{""},
 		CommandPrefix: ".",
 		SuperUsers:    nil,
+		Driver: []zero.Driver{
+			driver.NewWebSocketClient("127.0.0.1", "6700", ""),
+		},
 	})
 	select {}
 }
