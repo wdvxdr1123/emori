@@ -5,8 +5,10 @@ import (
 	easy "github.com/t-tomalak/logrus-easy-formatter"
 	zero "github.com/wdvxdr1123/ZeroBot"
 	"github.com/wdvxdr1123/ZeroBot/driver"
+
 	_ "github.com/wdvxdr1123/emori/pkg/anime"
 	_ "github.com/wdvxdr1123/emori/pkg/rcnb"
+	_ "github.com/wdvxdr1123/emori/pkg/silicon"
 	_ "github.com/wdvxdr1123/emori/pkg/thisdoesnotexist"
 )
 
